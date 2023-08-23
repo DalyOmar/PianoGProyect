@@ -130,8 +130,8 @@ int main() {                // Define la función principal main que devuelve un
 			case 5:{         // Caso 5: Salir
                 system("cls");    // Limpia la pantalla de la consola.
                 printf("Se ha pulsado Salir\n");   // Imprime un mensaje indicando que se seleccionó la opción "Salir".
-                std::string codigo = "start https://github.com/DalyOmar/PianoGProyect/blob/main/CodigoBasepiano.cpp";
-				system(codigo.c_str());
+                std::string codigo = "start https://github.com/DalyOmar/PianoGProyect/blob/main/CodigoBasepiano.cpp";// Crea una cadena de caracteres con un enlace al codigo base.
+				system(codigo.c_str()); // Ejecuta el comando para abrir el enlace en el navegador web predeterminado.
 				break;    // Sale del switch.
 			}
             default:        // Caso por defecto (si valor no coincide con ningún caso anterior)
