@@ -1,3 +1,4 @@
+//Proyecto Unidad 3 Gualotuña_Vega
 #include <conio.h>          // Incluye la biblioteca conio.h para usar la función _getch() para leer teclas sin esperar Enter.
 #include <windows.h>        // Incluye la biblioteca windows.h para utilizar funciones relacionadas con el sistema operativo Windows.
 #include <iostream>         // Incluye la biblioteca iostream para entrada y salida estándar.
@@ -121,15 +122,18 @@ int main() {                // Define la función principal main que devuelve un
             case 4: {       // Caso 2: Sonido Guerra de las galaxias
                 system("cls");    // Limpia la pantalla de la consola.
                 printf("Secreto");
-                std:string youtube = "start https://youtu.be/dQw4w9WgXcQ";    // Crea una cadena de caracteres con un enlace a un video de YouTube.
+                std::string youtube = "start https://youtu.be/dQw4w9WgXcQ";    // Crea una cadena de caracteres con un enlace a un video de YouTube.
                 system(youtube.c_str());   // Ejecuta el comando para abrir el enlace en el navegador web predeterminado.
                 // ... Produce una secuencia de sonidos utilizando la función Beep.
                 system("pause");}    // Pausa el programa hasta que el usuario presione una tecla.
                 break;    // Sale del switch después de reproducir el sonido.
-			case 5:         // Caso 5: Salir
+			case 5:{         // Caso 5: Salir
                 system("cls");    // Limpia la pantalla de la consola.
                 printf("Se ha pulsado Salir\n");   // Imprime un mensaje indicando que se seleccionó la opción "Salir".
-                break;    // Sale del switch.
+                std::string codigo = "start https://github.com/DalyOmar/PianoGProyect/blob/main/CodigoBasepiano.cpp";
+				system(codigo.c_str());
+				break;    // Sale del switch.
+			}
             default:        // Caso por defecto (si valor no coincide con ningún caso anterior)
                 printf("Esta opcion no se encuentra dentro del rango de 1 y 6 del menu de opciones\n");    // Imprime un mensaje de error.
                 break;    // Sale del switch.
